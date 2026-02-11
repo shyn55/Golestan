@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Vazirmatn:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Vazirmatn:wght@100..900&display=swap");
+@font-face {
+  font-family: nastaliq;
+  src: url(/fonts/IranNastaliq/IranNastaliq.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #f5f7fa;
+}
+
+/* ✅ کانتینر استاندارد ریسپانسیو */
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+ 
+}
+
+/* ---------------- HEADER ---------------- */
+
+header p,
+header h2 {
+  text-align: center;
+}
+
+header p {
+  font-family: "";
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+header h2 span {
+  font-family: "nastaliq";
+  font-weight: bold;
+  word-spacing: 10px;
+  font-size: 32px;
+  color: rgb(0, 102, 128);
+  line-height: 1.8;
+}
+
+header h2 p {
+  font-size: 15px;
+  color: rgb(0, 102, 128);
+}
+
+/* ---------------- MAIN ---------------- */
+
+main {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Vazirmatn";
+}
+
+main h3,
+main h2 {
+  margin: 15px 0;
+}
+
+/* ✅ فرم */
+main .inputBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+
+main .inputBox input {
+  width: 100%;
+  max-width: 320px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+main .inputBox input::placeholder {
+  font-family: "Vazirmatn";
+}
+
+/* کپچا */
+.inputBox img {
+  width: 100%;
+  max-width: 170px;
+  margin: 15px;
+  height: auto;
+}
+
+/* ---------------- BUTTONS ---------------- */
+
+main .btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+main .btn button {
+  all: unset;
+  border: 1px solid #007c91;
+  padding: 6px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main .btn button:hover {
+  background: #007c91;
+  color: white;
+}
+
+main a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* ---------------- TABLET ---------------- */
+@media (max-width: 768px) {
+  header h2 span {
+    font-size: 26px;
+    word-spacing: 5px;
+  }
+
+  main {
+    margin-top: 30px;
+  }
+}
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  header h2 span {
+    font-size: 22px;
+    line-height: 2;
+  }
+
+  header h2 p {
+    font-size: 14px;
+  }
+
+  main h2 {
+    font-size: 20px;
+  }
+
+  main h3 {
+    font-size: 16px;
+  }
+
+  main .btn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .btn button {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+  }
+}
